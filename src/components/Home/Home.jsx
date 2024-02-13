@@ -1,54 +1,130 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
-    <div className="mx-auto w-full max-w-7xl">
-      <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
-        <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
-          <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
-            <h2 className="text-4xl font-bold sm:text-5xl">
-              Download Now
-              <span className="hidden sm:block text-4xl">Lorem Ipsum</span>
-            </h2>
-
-            <Link
-              className="inline-flex text-white items-center px-6 py-3 font-medium bg-orange-700 rounded-lg hover:opacity-75"
-              to="/"
+    <>
+      <section className="">
+        <div className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
+          <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
+            <svg
+              className="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block"
+              viewBox="0 0 100 100"
+              fill="currentColor"
+              preserveAspectRatio="none slice"
             >
-              <svg
-                fill="white"
-                width="24"
-                height="24"
-                xmlns="http://www.w3.org/2000/svg"
-                fillRule="evenodd"
-                clipRule="evenodd"
-              >
-                <path d="M1.571 23.664l10.531-10.501 3.712 3.701-12.519 6.941c-.476.264-1.059.26-1.532-.011l-.192-.13zm9.469-11.56l-10.04 10.011v-20.022l10.04 10.011zm6.274-4.137l4.905 2.719c.482.268.781.77.781 1.314s-.299 1.046-.781 1.314l-5.039 2.793-4.015-4.003 4.149-4.137zm-15.854-7.534c.09-.087.191-.163.303-.227.473-.271 1.056-.275 1.532-.011l12.653 7.015-3.846 3.835-10.642-10.612z" />
-              </svg>
-              &nbsp; Download now
-            </Link>
+              <path d="M50 0H100L50 100H0L50 0Z" />
+            </svg>
+            <img
+              className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+              src="https://images.pexels.com/photos/5531540/pexels-photo-5531540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+          </div>
+          <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+            <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
+              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+                Brand new
+              </p>
+              <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                Everything you
+                <br className="hidden md:block" />
+                can imagine{" "}
+                <span className="inline-block text-deep-purple-accent-400">
+                  is real
+                </span>
+              </h2>
+              <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
+                Welcome to our clothing emporium, From the perfect fit to the
+                finest fabrics, we bring your fashion fantasies to life. Explore
+                our curated collection and unveil the allure of timeless
+                elegance.
+              </p>
+              <div className="flex items-center">
+                <a
+                  href="/products"
+                  className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-orange-600 transition duration-200 rounded shadow-md bg-orange-100 hover:bg-orange-200 "
+                >
+                  Get started
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-          <img
-            className="w-96"
-            src="https://i.ibb.co/5BCcDYB/Remote2.png"
-            alt="image1"
-          />
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+          <header className="text-center">
+            <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
+              New Collection
+            </h2>
+
+            <p className="mx-auto mt-4 max-w-md text-gray-500">
+              Discover the essence of effortless beauty and elevate your
+              wardrobe with our exclusive selection.
+            </p>
+          </header>
+
+          <ul className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3">
+            <li>
+              <a href="/products" className="group relative block">
+                <img
+                  src="https://images.unsplash.com/photo-1618898909019-010e4e234c55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                  alt=""
+                  className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
+                />
+
+                <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
+                  <h3 className="text-xl font-medium text-white">
+                    Casual Trainers
+                  </h3>
+
+                  <span className="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+                    Shop Now
+                  </span>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="/products" className="group relative block">
+                <img
+                  src="https://images.unsplash.com/photo-1624623278313-a930126a11c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                  alt=""
+                  className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
+                />
+
+                <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
+                  <h3 className="text-xl font-medium text-white">
+                    Winter Jumpers
+                  </h3>
+
+                  <span className="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+                    Shop Now
+                  </span>
+                </div>
+              </a>
+            </li>
+
+            <li className="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
+              <a href="/products" className="group relative block">
+                <img
+                  src="https://images.unsplash.com/photo-1593795899768-947c4929449d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80"
+                  alt=""
+                  className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
+                />
+
+                <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
+                  <h3 className="text-xl font-medium text-white">
+                    Skinny Jeans Blue
+                  </h3>
+
+                  <span className="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+                    Shop Now
+                  </span>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
-      </aside>
-
-      <div className="grid  place-items-center sm:mt-20">
-        <img
-          className="sm:w-96 w-48"
-          src="https://i.ibb.co/2M7rtLk/Remote1.png"
-          alt="image2"
-        />
-      </div>
-
-      <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">
-        Lorem Ipsum Yojo
-      </h1>
-    </div>
+      </section>
+    </>
   );
 }

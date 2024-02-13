@@ -7,8 +7,8 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
               <img
-                src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                className="mr-3 h-16"
+                src="https://t3.ftcdn.net/jpg/01/14/16/78/360_F_114167833_n8VkKfsCSbJ2IsfYRpiLwkM41HU7tvFW.jpg"
+                className="mr-3 w-24 "
                 alt="Logo"
               />
             </Link>
@@ -77,7 +77,7 @@ export default function Footer() {
           <span className="text-sm text-gray-500 sm:text-center">
             © 2023 -
             <a href="https://hiteshchoudhary.com/" className="hover:underline">
-            -  Obaid
+              - Obaid
             </a>
             . All Rights Reserved.
           </span>

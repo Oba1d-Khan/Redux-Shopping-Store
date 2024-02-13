@@ -40,7 +40,7 @@ export default function Products() {
               <p className="font-semibold text-lg mb-1">{product.title}</p>
               <p className="text-gray-600 mb-2">$ {product.price}</p>
               <button
-                className="bg-orange-700 text-white p-2 rounded-md"
+                className="bg-orange-600 text-white p-2 rounded-md"
                 onClick={() => handleAdd(product)}
               >
                 Add to Cart
